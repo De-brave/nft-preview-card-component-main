@@ -3,6 +3,7 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
     display: grid;
     place-items: center;
     font-family: 'Outfit', sans-serif;
@@ -31,24 +32,10 @@ body {
     height: 265px;
 }
 
-/* This CSS changes the background color and adds an icon to the card image on hover */
-.card-bg-img:hover {
-    background-color: hsl(178, 100%, 50%);
-    background-image: url(images/icon-view.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    cursor: pointer;
-}
-
 /* This CSS sets the size and border radius of the equilibrium image */
 .equilibrium-img {
     width: 265px;
     border-radius: 10px;
-}
-
-/* This CSS changes the opacity of the equilibrium image on hover */
-.equilibrium-img:hover {
-    opacity: 0.2;
 }
 
 /* This CSS styles the h1 element and changes its color on hover */
@@ -56,12 +43,6 @@ h1 {
     font-size: 1.2em;
     color: hsl(0, 0%, 100%);
     margin-top: 1.2em;
-}
-
-h1:hover {
-    color: hsl(178, 100%, 50%);
-    cursor: pointer;
-    transition: 0.5s ease;
 }
 
 /* This CSS styles the first paragraph element and sets its color and line height */
@@ -128,16 +109,12 @@ h1:hover {
     cursor: pointer;
 }
 
-/* Set hover color for the text inside .avatar-text span element */
-.avatar-text span:hover {
-    color: hsl(178, 100%, 50%);
-}
-
 /* Set font size, text align, and padding top for the attribution element */
 .attribution { 
     font-size: 11px; 
     text-align: center;
-    padding-top: 50px; 
+    margin-top: 30px;
+    margin-bottom:30px; 
 }
 
 /* Set color for the links inside the attribution element */
@@ -163,5 +140,34 @@ h1:hover {
     /* Style for equilibrium image */
     .equilibrium-img {
         width: 235px;
+    }
+}
+
+/* Media query for screens with a maximum width of 374px */
+@media screen and (min-width: 1100px) {
+
+    /* This CSS changes the background color and adds an icon to the card image on hover */
+    .card-bg-img:hover {
+        background-color: hsl(178, 100%, 50%);
+        background-image: url(images/icon-view.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+    }
+
+    /* This CSS changes the opacity of the equilibrium image on hover */
+    .equilibrium-img:hover {
+        opacity: 0.2;
+    }
+
+    h1:hover {
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+
+    /* Set hover color for the text inside .avatar-text span element */
+    .avatar-text span:hover {
+        color: hsl(178, 100%, 50%);
     }
 }

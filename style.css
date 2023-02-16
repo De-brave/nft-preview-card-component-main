@@ -1,0 +1,167 @@
+
+/* This CSS styles the body element and sets a background color and font-family for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+}
+
+/* This CSS styles the container element, which holds the main content of the page */
+.container {
+    margin-top: 30px;
+    background: hsl(216, 50%, 16%);
+    width: 270px;
+    border-radius: 20px; 
+    padding: 1.5rem;
+    box-shadow: 3px 3px 20px hsla(0, 0%, 0%, 0.548);
+}
+
+/* This CSS styles the background image in the card and sets its size */
+.card-bg-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    width: 265px;
+    height: 265px;
+}
+
+/* This CSS changes the background color and adds an icon to the card image on hover */
+.card-bg-img:hover {
+    background-color: hsl(178, 100%, 50%);
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+/* This CSS sets the size and border radius of the equilibrium image */
+.equilibrium-img {
+    width: 265px;
+    border-radius: 10px;
+}
+
+/* This CSS changes the opacity of the equilibrium image on hover */
+.equilibrium-img:hover {
+    opacity: 0.2;
+}
+
+/* This CSS styles the h1 element and changes its color on hover */
+h1 {
+    font-size: 1.2em;
+    color: hsl(0, 0%, 100%);
+    margin-top: 1.2em;
+}
+
+h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+/* This CSS styles the first paragraph element and sets its color and line height */
+.first-p {
+    color: hsl(215, 51%, 70%);
+    line-height: 1.6em;
+    font-size: 17px;
+}
+
+/* This CSS creates a flexbox for the elements in the container and sets some spacing */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 25px;
+}
+
+/* This CSS styles the Ethereum icon and sets its size and color */
+.ethereum-svg {
+    padding-right: 0.2em;
+    width: 0.7em;
+    vertical-align: middle;
+}
+
+/* This CSS styles the Ethereum text and sets its color and font size */
+.ethereum span {
+    font-weight: 400;
+    color: hsl(178, 100%, 50%);
+    font-size: 17px;
+}
+
+/* This CSS styles the clock icon and sets its size and position */
+.clock-svg {
+    padding-right: 0.2em;
+    width: 1.2em;
+    vertical-align: middle;
+    margin-top: -4.5px;
+}
+
+/* Set color and font weight for the text inside .clock element */
+.clock span {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+/* Set styles for the avatar image */
+.avatar {
+    width: 35px;
+    vertical-align: middle;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-right: 0.7em;
+}
+
+/* Set font size for the text inside .avatar-text element */
+.avatar-text {
+    font-size: 15px;
+}
+
+/* Set color and cursor style for the text inside .avatar-text span element */
+.avatar-text span {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+/* Set hover color for the text inside .avatar-text span element */
+.avatar-text span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+/* Set font size, text align, and padding top for the attribution element */
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    padding-top: 50px; 
+}
+
+/* Set color for the links inside the attribution element */
+.attribution a { 
+    color: hsl(178, 100%, 50%); 
+}
+
+/* Media query for screens with a maximum width of 374px */
+@media screen and (max-width: 374px) {
+   
+    /* Style for container element */
+    .container {
+        margin-top: 30px;
+        width: 235px;
+    }
+
+    /* Style for card background image */
+    .card-bg-img {
+        width: 235px;
+        height: 235px;
+    }
+
+    /* Style for equilibrium image */
+    .equilibrium-img {
+        width: 235px;
+    }
+}

@@ -1,2 +1,6 @@
 # nft-preview-card-component-main
- An NFT preview card component project by Front-End Mentor
+This HTML and CSS code represents an NFT preview card component, with a design challenge attribution to Frontend Mentor and code authorship to Godwin Wisdom.
+
+The HTML code consists of a head element and a body element. The head element includes a meta tag for character encoding, viewport, description and author information, as well as a website icon link and Google Fonts API link. The body element includes a container div that wraps the main content of the page, which consists of an image and text content for the NFT card, a flexbox container for the Ethereum price and countdown timer, and author information.
+
+The CSS code styles the body element and sets a background color, font-family, font-size and grid alignment for the entire page. The CSS code styles the container element, which holds the main content of the page and sets a background color, border radius, padding, box-shadow, and width. It styles the background image in the card and sets its size, hover background-color, and hover icon. It sets the size and border radius of the equilibrium image and changes the opacity of the equilibrium image on hover. It styles the h1 element and changes its color on hover. It styles the first paragraph element and sets its color and line height. It creates a flexbox for the elements in the container and sets some spacing. Finally, it styles the Ethereum and countdown timer elements in the flexbox.

@@ -3,7 +3,6 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
     display: grid;
     place-items: center;
     font-family: 'Outfit', sans-serif;
@@ -93,7 +92,7 @@ h1 {
 .avatar {
     width: 35px;
     vertical-align: middle;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 20px;
     margin-right: 0.7em;
 }
@@ -146,6 +145,11 @@ h1 {
 /* Media query for screens with a maximum width of 374px */
 @media screen and (min-width: 1100px) {
 
+    /* This CSS styles the body element and sets a background color and font-family for the entire page */
+    body {
+        height: 100vh;
+    }
+
     /* This CSS changes the background color and adds an icon to the card image on hover */
     .card-bg-img:hover {
         background-color: hsl(178, 100%, 50%);
@@ -169,5 +173,15 @@ h1 {
     /* Set hover color for the text inside .avatar-text span element */
     .avatar-text span:hover {
         color: hsl(178, 100%, 50%);
+    }
+
+    /* Set styles for the avatar image */
+    .avatar {
+        border: 2px solid white;
+    }
+
+    /* Set font size, text align, and padding top for the attribution element */
+    .attribution { 
+        margin-top: 20px;
     }
 }
